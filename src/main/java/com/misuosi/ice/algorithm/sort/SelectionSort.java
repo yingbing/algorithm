@@ -24,7 +24,7 @@ public class SelectionSort {
     }
 
     public static void main(String[] args) {
-        int[] a = {0, 11, 28, 10, 3, 4, 2, 5,1, 8, 13, 24};
+        int[] a = {0, 11, 28, 10, 3, 4, 2, 5, 1, 8, 13, 24};
         sort(a);
         System.out.println(Arrays.toString(a));
     }
