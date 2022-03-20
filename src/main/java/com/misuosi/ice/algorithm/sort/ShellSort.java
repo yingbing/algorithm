@@ -2,6 +2,9 @@ package com.misuosi.ice.algorithm.sort;
 
 import java.util.Arrays;
 
+/**
+ * 希尔排序
+ */
 public class ShellSort {
 
     public static void sort(int[] a) {
