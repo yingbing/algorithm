@@ -7,6 +7,8 @@ import java.util.Arrays;
  *         parent = (i - 1) /2;
  *         c1 = 2i + 1;
  *         c2 = 2i + 2;
+ * @author xueyingbing
+ * @date 2022/3/21
  */
 public class HeapSort {
 

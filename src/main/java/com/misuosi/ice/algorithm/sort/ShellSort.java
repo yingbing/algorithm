@@ -4,6 +4,8 @@ import java.util.Arrays;
 
 /**
  * 希尔排序
+ * @author xueyingbing
+ * @date 2022/3/20
  */
 public class ShellSort {
 

@@ -6,6 +6,8 @@ import java.util.Arrays;
  * 快速排序，快速排序有几种方式：
  * 1、对换后，再把最后一个小于的跟目标不值对换（当前方式）
  * 2、把第一个值提取出来，然后进行交替换坑的方式
+ * @author xueyingbing
+ * @date 2022/3/22
  */
 public class QuickSort {
 

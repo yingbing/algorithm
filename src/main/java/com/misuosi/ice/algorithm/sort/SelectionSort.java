@@ -4,6 +4,8 @@ import java.util.Arrays;
 
 /**
  * 选择排序/冒泡排序
+ * @author xueyingbing
+ * @date 2022/3/20
  */
 public class SelectionSort {
 

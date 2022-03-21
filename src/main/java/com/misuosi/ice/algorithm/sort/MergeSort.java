@@ -4,6 +4,8 @@ import java.util.Arrays;
 
 /**
  * 归并排序
+ * @author xueyingbing
+ * @date 2022/3/21
  */
 public class MergeSort {
 
