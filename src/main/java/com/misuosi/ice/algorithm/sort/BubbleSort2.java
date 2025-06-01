@@ -22,10 +22,16 @@ public class BubbleSort2 {
         }
     }
 
-
+    /**
+     * 这里主要优化点在于，这里不需要记录最小值，只需要记录最小值的索引，然后交换位置
+     */
     public static void sort1(int[] a) {
         for (int i = a.length - 1; i > 0; i--) {
             int maxIndex = 0;
+            // 注意，这里的终止条件是 j < i, 因此i是不参与此次循环的，i的值需要在最后再做一次比较
+            // 这样做的好处是，可以少一次循环，
+            // 反正最后无论是比较maxIndex和i是否相等，还是比较值，都是要比较的，差别不大
+            // 反正是无聊练习写代码，多想想总是好的
             for (int j = 1; j < i; j++) {
                 if (a[j] > a[maxIndex]) {
                     maxIndex = j;

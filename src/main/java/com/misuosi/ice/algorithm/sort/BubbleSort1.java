@@ -5,6 +5,7 @@ import java.util.Arrays;
 
 public class BubbleSort1 {
 
+    @Deprecated
     public static void sort(int[] a) {
         for (int i = 0; i < a.length; i++) {
             int min = Integer.MAX_VALUE;
@@ -22,14 +23,21 @@ public class BubbleSort1 {
         }
     }
 
+    /**
+     * 这里主要优化点在于，这里不需要记录最小值，只需要记录最小值的索引，然后交换位置
+     */
     public static void sort1(int[] a) {
         for (int i = 0; i < a.length; i++) {
+            // 这是的默认值是i, 所以每个重置的节点都参与了比较，因此最后不需要再和minIndex的位置进行比较
             int minIndex = i;
             for (int j = i + 1; j < a.length; j++) {
                 if (a[j] < a[minIndex]) {
                     minIndex = j;
                 }
             }
+            // 这里就是不需要再比较的位置，只需要判断下标是否一致就可以了
+            // 其实更好的做法可能是 a[minIndex] != a[i]，但是差别不大，但是理解起来更加费劲
+            // 其实a[minIndex] <  a[i]可能更好理解，我也实现了这种做法，可以看BubbleSort2的实现。
             if (minIndex != i) {
                 int temp = a[minIndex];
                 a[minIndex] = a[i];

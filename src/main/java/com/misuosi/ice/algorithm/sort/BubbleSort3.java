@@ -3,6 +3,10 @@ package com.misuosi.ice.algorithm.sort;
 import java.util.Arrays;
 
 public class BubbleSort3 {
+
+    /**
+     * 这是传统的冒泡，方向是从前往后冒，从后往前可以看Bubble4
+     */
     public static void sort(int[] a) {
         for (int i = a.length - 1; i >0; i--) {
             for (int j = 0; j < i; j++) {
