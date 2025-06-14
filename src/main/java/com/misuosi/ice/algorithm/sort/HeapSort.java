@@ -7,6 +7,8 @@ import java.util.Arrays;
  *         parent = (i - 1) /2;
  *         c1 = 2i + 1;
  *         c2 = 2i + 2;
+ * 可以看这个视频：
+ * https://www.bilibili.com/video/BV1HYtseiEQ8/?spm_id_from=333.337.search-card.all.click&vd_source=c3fb400915b453040dc5ffeb296b0a20
  * @author xueyingbing
  * @date 2022/3/21
  */
